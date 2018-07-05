@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- JQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+     <!-- Firebase -->
+     <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+     <!-- Moments -->
+      <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+   
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>Train Time!</title>
+  </head>
+  <body>
+
+     <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Train Time</h1>
+        <p class="lead">Train Time Assignment.</p>
+      </div>
+    </div>
+
+    <div class="container">
+    <!-- Train Schedule -->
+    <div class="card trainSchedule">
+      <div class="card-header">
+        Trains Schedule
+      </div>
+      <div class="card-body">
+          <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Train</th>
+                  <th scope="col">Destination</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Next Train</th>
+                  <th scope="col">Arriving In</th>
+                </tr>
+              </thead>
+              <tbody class="inputData" >
+            
+                    
+              </tbody>
+            </table>
+            <!-- <h2 id="trainNameDisplay"></h2>
+            <h2 id="destinationDisplay"></h2>
+            <h2 id="trainTimeDisplay"></h2>
+            <h2 id="frequencyDisplay"></h2> -->
+      </div>
+      
+    </div>
+
+    <!-- Train Form -->
+    <div class="card trainForm">
+        <div class="card-header">
+          Input New Train
+        </div>
+        <div class="card-body">
+            <div class="container">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCity">Train Name</label>
+                      <input type="text" class="form-control" id="train-name">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCity">Destination</label>
+                      <input type="text" class="form-control" id="destination">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCity">First Train Time (HH:mm - militar time)</label>
+                      <input type="text" class="form-control" id="train-time">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCity">Frequency (min)</label>
+                      <input type="text" class="form-control" id="frequency">
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary train-submit">Submit</button>
+                </form>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
